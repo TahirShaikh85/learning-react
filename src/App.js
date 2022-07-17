@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
-// import TextField from './Components/TextField'
 import About from './Components/About'
 import Counter from './Components/Counter';
+import ScreenSize from './Components/ScreenSize';
 
 function App() {
   let [mode, setMode] = useState('light');
@@ -16,10 +16,12 @@ function App() {
   }
   return (
     <>
+    {/*   **** Project 1 ****
         <Navbar myMode={mode} toggleTheme={toggleMode} />
-        {/* <TextField /> */}
         <About />
         <Counter />
+    */}
+    <ScreenSize/>
     </>
   );
 }
