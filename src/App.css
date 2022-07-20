@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(2, 70, 143);
+  background-color: rgb(93, 171, 255);
 }
 .sizeContainer{
   position: absolute;
@@ -17,4 +17,15 @@ body{
   color: whitesmoke;
   text-align: center;
   font-weight: bold;
+}
+.card{
+  width: 22rem;
+  margin-bottom: 15px;
+}
+.img-avt{
+    width: 100%;
+    margin-top: 8px;
+    height: 78%;
+    margin-left: 10px;
+    border-radius: 8px;
 }
