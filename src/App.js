@@ -11,6 +11,7 @@ import UseState2 from './learning/useState/useState2';
 import UseState3 from './learning/useState/useState3';
 
 import UseLayoutEffect from './learning/useLayoutEffect/useLayoutEffect';
+import UseReducer from './learning/useReducer/useReducer';
 
 function App() {
 
@@ -45,7 +46,11 @@ function App() {
 
     */}
 
-    <UseLayoutEffect/>
+    {/* learning useLayoutEffect() hook
+    <UseLayoutEffect/> 
+    */}
+
+    <UseReducer/>
     
     </>
   );
