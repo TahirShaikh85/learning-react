@@ -6,7 +6,12 @@ import Counter from './Components/Project1/Counter';
 import ScreenSize from './Components/Project2/ScreenSize';
 import Project3 from './Components/Project3/Project3';
 
+import UseState from './learning/useState/UseState';
+import UseState2 from './learning/useState/useState2';
+import UseState3 from './learning/useState/useState3';
+
 function App() {
+
   let [mode, setMode] = useState('light');
   const toggleMode = () => {
     if (mode == 'light') {
@@ -27,9 +32,14 @@ function App() {
     <ScreenSize/> 
     */}
 
-    {/* Project 3 (Github user data)  */}
+    {/* Project 3 (Github user data)  
     <Project3/>
-
+    */}
+    
+    <UseState/>
+    <UseState2/>
+    <UseState3/>
+    
     </>
   );
 }
