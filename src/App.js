@@ -5,13 +5,14 @@ import About from './Components/Project1/About';
 import Counter from './Components/Project1/Counter';
 import ScreenSize from './Components/Project2/ScreenSize';
 import Project3 from './Components/Project3/Project3';
+import FoodGallery from './Components/Project4/FoodGallery';
 
 import UseState from './learning/useState/UseState';
 import UseState2 from './learning/useState/useState2';
 import UseState3 from './learning/useState/useState3';
-
 import UseLayoutEffect from './learning/useLayoutEffect/useLayoutEffect';
 import UseReducer from './learning/useReducer/useReducer';
+
 
 function App() {
 
@@ -31,11 +32,11 @@ function App() {
         <Counter />
     */}
 
-      {/* **** Project 2 ****
+      {/* **** Project 2 **** (calculate width of device)
     <ScreenSize/> 
     */}
 
-    {/* Project 3 (Github user data)  
+    {/* **** Project 3 **** (Github user data)  
     <Project3/>
     */}
     
@@ -50,8 +51,10 @@ function App() {
     <UseLayoutEffect/> 
     */}
 
-    <UseReducer/>
-    
+    {/* learning useReducer() hook
+    <UseReducer/> 
+    */}
+    <FoodGallery/>
     </>
   );
 }
