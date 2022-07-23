@@ -1,4 +1,4 @@
-import React, { useState,useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import './App.css';
 import Navbar from './Components/Project1/Navbar';
 import About from './Components/Project1/About';
@@ -17,6 +17,9 @@ import UseCallback from './learning/useCallback/useCallback';
 import Age from './learning/useCallback/Age';
 import Instructions from './learning/useCallback/Instructions';
 
+import UseRef from './learning/useRef/useRef';
+import UseRef2 from './learning/useRef/useRef2';
+
 function App() {
 
   let [mode, setMode] = useState('light');
@@ -29,16 +32,16 @@ function App() {
   }
 
   // useCallback()
-  const [age,setAge] = useState(19);
-  const [siblings,setSiblings] = useState(2);
+  const [age, setAge] = useState(19);
+  const [siblings, setSiblings] = useState(2);
 
-  const handleClick = ()=>{
+  const handleClick = () => {
     setAge(prevAge => prevAge + 1);
   }
   const someValue = "Some value here";
-  const doSomething = useCallback(()=>{
+  const doSomething = useCallback(() => {
     return someValue;
-  },[])
+  }, [])
 
   return (
     <>
@@ -52,38 +55,43 @@ function App() {
     <ScreenSize/> 
     */}
 
-    {/* **** Project 3 **** (Github user data)  
+      {/* **** Project 3 **** (Github user data)  
     <Project3/>
     */}
-    
-    {/* learning useState() 
+
+      {/* learning useState() 
     <UseState/>
     <UseState2/>
     <UseState3/>
 
     */}
 
-    {/* learning useLayoutEffect() hook
+      {/* learning useLayoutEffect() hook
     <UseLayoutEffect/> 
     */}
 
-    {/* learning useReducer() hook 
+      {/* learning useReducer() hook 
     <UseReducer/> 
     */}
-   
-    {/* **** Project 4 **** (Food Image gallery)
+
+      {/* **** Project 4 **** (Food Image gallery)
       <FoodGallery/> 
     */}
 
-    {/* learning useCallback() hook  */}
+    {/* learning useCallback() hook  
 
     <div>
       <Age age={age} handleClick={handleClick} />
       <button className='btn btn-success' onClick={()=>setSiblings(prevSibling => prevSibling + 1)}>Increase siblings</button>
       <Instructions doSomething={doSomething} siblings={siblings} />
     </div>
-   
 
+   */}
+
+
+    {/* learning useRef() */}
+    <UseRef/>
+    <UseRef2/>
     </>
   );
 }
