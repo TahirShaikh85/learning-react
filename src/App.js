@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useCallback } from 'react';
 import './App.css';
 import Navbar from './Components/Project1/Navbar';
 import About from './Components/Project1/About';
@@ -13,6 +13,9 @@ import UseState3 from './learning/useState/useState3';
 import UseLayoutEffect from './learning/useLayoutEffect/useLayoutEffect';
 import UseReducer from './learning/useReducer/useReducer';
 
+import UseCallback from './learning/useCallback/useCallback';
+import Age from './learning/useCallback/Age';
+import Instructions from './learning/useCallback/Instructions';
 
 function App() {
 
@@ -24,6 +27,19 @@ function App() {
       setMode('light')
     }
   }
+
+  // useCallback()
+  const [age,setAge] = useState(19);
+  const [siblings,setSiblings] = useState(2);
+
+  const handleClick = ()=>{
+    setAge(prevAge => prevAge + 1);
+  }
+  const someValue = "Some value here";
+  const doSomething = useCallback(()=>{
+    return someValue;
+  },[])
+
   return (
     <>
       {/*   **** Project 1 ****
@@ -51,10 +67,23 @@ function App() {
     <UseLayoutEffect/> 
     */}
 
-    {/* learning useReducer() hook
+    {/* learning useReducer() hook 
     <UseReducer/> 
     */}
-    <FoodGallery/>
+   
+    {/* **** Project 4 **** (Food Image gallery)
+      <FoodGallery/> 
+    */}
+
+    {/* learning useCallback() hook  */}
+
+    <div>
+      <Age age={age} handleClick={handleClick} />
+      <button className='btn btn-success' onClick={()=>setSiblings(prevSibling => prevSibling + 1)}>Increase siblings</button>
+      <Instructions doSomething={doSomething} siblings={siblings} />
+    </div>
+   
+
     </>
   );
 }
