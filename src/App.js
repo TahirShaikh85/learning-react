@@ -21,6 +21,7 @@ import UseRef from './learning/useRef/useRef';
 import UseRef2 from './learning/useRef/useRef2';
 import UseRefCheckout from './Components/Project5/useRefCheckout';
 import UseMemo from './learning/useMemo/useMemo';
+import UseTransition from './learning/useTransition/useTransition';
 
 function App() {
 
@@ -101,9 +102,12 @@ function App() {
     */}
 
 
-    {/* learning useMemo() hook */}
+    {/* learning useMemo() hook 
     <UseMemo/>
-    
+    */}
+
+    {/* learning useTransition() hook */}
+    <UseTransition/>
     </>
   );
 }
