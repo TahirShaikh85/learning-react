@@ -19,6 +19,7 @@ import Instructions from './learning/useCallback/Instructions';
 
 import UseRef from './learning/useRef/useRef';
 import UseRef2 from './learning/useRef/useRef2';
+import UseRefCheckout from './Components/Project5/useRefCheckout';
 
 function App() {
 
@@ -78,7 +79,7 @@ function App() {
       <FoodGallery/> 
     */}
 
-    {/* learning useCallback() hook  
+      {/* learning useCallback() hook  
 
     <div>
       <Age age={age} handleClick={handleClick} />
@@ -89,9 +90,15 @@ function App() {
    */}
 
 
-    {/* learning useRef() */}
+      {/* learning useRef()  
     <UseRef/>
     <UseRef2/>
+    */}
+
+    {/* ****** Project 5 ****** (Checkout page with useRef() hook) */}
+    <UseRefCheckout/>
+    
+
     </>
   );
 }
