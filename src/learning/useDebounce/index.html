@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce in JS</title>
+</head>
+<body>
+    <input type="text" id="inputBx" onkeyup="getDate()">
+
+    <script>
+        const inp = document.getElementById ('inputBx');
+        let timer;
+
+        const debounce = (fn,delay)=>{
+            if(timer) clearTimeout(timer)
+           timer = setTimeout(fn,delay)
+        }
+
+        const getDate = ()=>{
+            debounce(()=>{
+                console.log("hey: ",inp.value);
+            },500)
+        }
+    </script>
+</body>
+</html>

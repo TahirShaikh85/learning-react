@@ -22,6 +22,7 @@ import UseRef2 from './learning/useRef/useRef2';
 import UseRefCheckout from './Components/Project5/useRefCheckout';
 import UseMemo from './learning/useMemo/useMemo';
 import UseTransition from './learning/useTransition/useTransition';
+import Debounce from './learning/useDebounce/debounce';
 
 function App() {
 
@@ -106,8 +107,12 @@ function App() {
     <UseMemo/>
     */}
 
-    {/* learning useTransition() hook */}
+    {/* learning useTransition() hook 
     <UseTransition/>
+    */}
+
+    {/* learning debouncing --> custome hook */}
+    <Debounce/>
     </>
   );
 }
